@@ -13,19 +13,17 @@ public class Recursion2 {
 
   }
 
-  public static int addTwoNumbers(int x, int y) {
+  public static void addTwoNumbers(int x, int y) {
     System.out.println( "x is " + x + " and y is " + y);
 
     while (x != 0) {
-      // x -= 1;
-      // y += 1;
+      x -= 1;
+      y += 1;
       addTwoNumbers(x -= 1, y += 1);
-      // System.out.println( "x is " + x + " and y is " + y);
-      return x;
+      System.out.println( "x is " + x + " and y is " + y);
     }
 
-    //System.out.println( "x is " + x + " and y is " + y);
-    return x;
+    System.out.println( "x is " + x + " and y is " + y);
   }
 
 } 
